@@ -1,0 +1,110 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --strong-cyan-hover: hsl(172, 67%, 60%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --very-dark-cyan-active: hsl(183, 100%, 20%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  --space-mono-font: 'Space Mono', monospace;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  font-family: var(--space-mono-font);
+}
+
+#calculator button{
+  background-color: var(--strong-cyan);
+}
+
+#calculator button:hover{
+  background-color: var(--strong-cyan-hover);
+  color: var(--very-dark-cyan);
+}
+
+#calculator button:active{
+  background-color: var(--very-dark-cyan-active);
+}
+
+#calculator .bill{
+  background: url('images/icon-dollar.svg') no-repeat 5px center;
+  background-position: 15px center;
+  background-color: var(--very-light-grayish-cyan);
+}
+
+#calculator .person{
+  background: url('images/icon-person.svg') no-repeat 5px center;
+  background-position: 15px center;
+  background-color: var(--very-light-grayish-cyan);
+}
+
+#calculator input{
+  border: none;
+  color: var(--dark-grayish-cyan);
+  text-align: right;
+  background-color: var(--very-light-grayish-cyan);
+}
+
+#calculator .customNumber{
+  text-align: left;
+}
+
+#calculator input::placeholder {
+  color: var(--grayish-cyan);
+}
+
+#calculator form .btn{
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-grayish-cyan);
+  border: none;
+}
+
+#calculator form .btn:hover{
+  background-color: var(--strong-cyan-hover);
+  color: var(--dark-grayish-cyan);
+}
+
+#calculator input[type="radio"]:checked + label {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: none;
+}
+
+#calculator .fs-3{
+  color: var(--strong-cyan);
+}
+
+#calculator .fs-6{
+  color: var(--grayish-cyan);
+}
+
+#calculator .fs-5{
+  color: var(--very-light-grayish-cyan);
+}
+
+#calculator .card{
+  border: none;
+}
+
+#calculator h4{
+  color: var(--dark-grayish-cyan);
+}
+
+#calculator label{
+  color: var(--grayish-cyan);
+}
+
+#calculator .form-control:focus {
+  box-shadow: 0 0 0 2px var(--strong-cyan); /* Contoh shadow saat dalam focus */
+}
+
+#calculator .invalid{
+  color: red;
+  display: none;
+}
+
+
